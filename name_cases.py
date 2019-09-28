@@ -8,7 +8,7 @@ print(another_name.upper())
 print(another_name.lower())
 print(another_name.title())
 
-quote_one = 'Dorothy remaked to her dog, “Toto, I\'ve got a feeling we\'re not in Kansas anymore.”'
+quote_one = 'Dorothy remarked to her dog, “Toto, I\'ve got a feeling we\'re not in Kansas anymore.”'
 print(quote_one)
 
 famous_person = "The lady in the restaurant "
