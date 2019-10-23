@@ -1,0 +1,4 @@
+Python is easy to read.
+There are a lot of things to learn and remember Python.
+I can learn Python.
+I need to start some Python projects.

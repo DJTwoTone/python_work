@@ -6,7 +6,7 @@ for number in range(1,21):
 a_lot = []
 for value in range(1,1000001):
 	a_lot.append(value)
-#print(a_lot)
+print(a_lot)
 
 #simple stats for the list
 small_boat = min(a_lot)

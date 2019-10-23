@@ -65,3 +65,4 @@ elif num % 2 == 0:
 	print(str(num) + " is a multiple of 2.")
 else:
 	print(str(num) + " is a prime number.")
+ 
