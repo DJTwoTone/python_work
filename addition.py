@@ -2,18 +2,24 @@ print("Tell me two numbers and I'll add them together for you")
 print("Enter 'q' to quit")
 
 while True:
-	first_number = input("Your first number:  ")
-	if first_number == 'q':
-		break
-	second_number = input("Your second number:  ")
-	if second_number == 'q':
-		break
-		
 	try:
-		sum = int(first_number) + int(second_number)
+		spam = input("\nYour first number:  ")
+		if spam == 'q':
+			break
+			
+		spam = int(spam)
+		
+		egg = input("\nYour second number:  ")
+		if egg == 'q':
+			break
+		
+		egg = int(egg)
+	
 	except ValueError:
 		print("Looks like you didn't enter two numbers. Kindly, try again.")
+	
 	else:
+		sum = spam + egg
+		
 		print(
-			"The sum of " + str(first_number) + " and " + str(second_number) 
-			+ " is " + str(sum) + ".") 
+			"The sum of " + str(spam) + " and " + str(egg) + " is " + str(sum) + ".") 
