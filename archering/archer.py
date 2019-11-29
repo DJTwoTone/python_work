@@ -14,18 +14,18 @@ class Archer():
         self.rect.centery = self.screen_rect.centery
         self.rect.left = self.screen_rect.left
 
-        self.center = float(self.rect.centery)
+        self.yaxis = float(self.rect.centery)
 
         self.moving_up = False
         self.moving_down = False
 
     def update(self):
-            if self.moving_up and self.rect.top < self.screen_rect.top:
-                self.center += self.ai_settings.archer_speed_factor
-            if self.moving_down and self.rect.bottom > self.screen_rect.bottom:
-                self.center -= self.ai_settings.archer_speed_factor
+            if self.moving_up and self.rect.bottom < self.screen_rect.bottom:
+                self.yaxis -= self.ai_settings.archer_speed_factor
+            if self.moving_down and self.rect.top > 0:
+                self.yaxis += self.ai_settings.archer_speed_factor
 
-            self.rect.centery = self.center
+            self.rect.centery = self.yaxis
 
     def blitme(self):
         self.screen.blit(self.image, self.rect)
